@@ -7,3 +7,4 @@
 # Editor-based HTTP Client requests
 /httpRequests/
 /target/classes/mdeium/*.class
+/.idea/leetcode/editor.xml
