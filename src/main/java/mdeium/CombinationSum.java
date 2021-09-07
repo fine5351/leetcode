@@ -38,21 +38,13 @@ public class CombinationSum {
             return;
         } else {
             for (int i = bits; i < candidates.length; i++) {
-                if(target >= candidates[i]){
+                if (target >= candidates[i]) {
                     temp.add(candidates[i]);
                     backTrack(i, candidates, target - candidates[i], temp, result);
                     temp.remove(temp.size() - 1);
                 }
             }
         }
-    }
-
-    private int sum(List<Integer> list) {
-        int sum = 0;
-        for (Integer integer : list) {
-            sum += integer;
-        }
-        return sum;
     }
 
 }
