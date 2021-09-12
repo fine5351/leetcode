@@ -22,13 +22,14 @@ public class PowXY {
         if (n >= 0) {
             return pow(x, n);
         } else {
-            return 1 / pow(x, Math.abs(n));
+            return 1 / pow(x, n);
         }
     }
 
     private double pow(double x, long n) {
         boolean isEven = (n % 2 == 0);
-        long temp = Math.abs(n);
+        long abs = Math.abs(n);
+        long temp = abs;
         List<Long> calculateList = new ArrayList<>(32);
         calculateList.add(temp);
         while (temp > 1) {
@@ -52,7 +53,7 @@ public class PowXY {
                 }
             }
         }
-        return record[calculateList.indexOf(Math.abs(n))];
+        return record[calculateList.indexOf(abs)];
     }
 //    public double myPow(double x, int n) {
 //        if (n >= 0) {
