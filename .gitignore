@@ -8,3 +8,5 @@
 /httpRequests/
 /target/classes/mdeium/*.class
 /.idea/leetcode/editor.xml
+/target/classes/fun/*.class
+/target/classes/*.class

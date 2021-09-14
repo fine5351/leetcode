@@ -1,6 +1,15 @@
 package mdeium;
 
+import java.util.List;
+import java.util.Map;
+
 public class SpiralMatrixII {
+
+    private String itemId;
+
+    private String itemName;
+
+    private Map<String, Boolean> functionEnableMap;
 
     public static void main(String[] args) {
         SpiralMatrixII spiralMatrixII = new SpiralMatrixII();
