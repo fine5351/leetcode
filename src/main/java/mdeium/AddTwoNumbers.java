@@ -13,7 +13,7 @@ public class AddTwoNumbers {
             int sum = x + y + carry;
             carry = sum / 10;
             currNode.val = sum % 10;
-            if(carry > 0 || ((p != null && p.next != null) || (q != null && q.next != null))){
+            if (carry > 0 || ((p != null && p.next != null) || (q != null && q.next != null))) {
                 currNode.next = new ListNode(carry);
             }
             currNode = currNode.next;
@@ -49,20 +49,4 @@ public class AddTwoNumbers {
 //        return new BigInteger(stringBuilder.toString());
 //    }
 
-    public class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode() {
-        }
-
-        ListNode(int val) {
-            this.val = val;
-        }
-
-        ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
-    }
 }
