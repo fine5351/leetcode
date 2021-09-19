@@ -1,5 +1,7 @@
 package mdeium;
 
+import utils.PrintUtils;
+
 import java.util.concurrent.TimeUnit;
 
 public class PartitionList {
@@ -8,7 +10,7 @@ public class PartitionList {
         PartitionList partitionList = new PartitionList();
         ListNode head = partitionList.partition(new ListNode(1, new ListNode(4, new ListNode(3,
                 new ListNode(2, new ListNode(5, new ListNode(2)))))), 3);
-        partitionList.printListNode(head);
+        PrintUtils.printListNode(head);
     }
 
     public ListNode partition(ListNode head, int x) {
@@ -33,15 +35,6 @@ public class PartitionList {
         newBigHead.next = null;
         newSmallHead.next = bigDummy.next.next;
         return smallDummy.next.next;
-    }
-
-    private void printListNode(ListNode head) {
-        while (head != null) {
-            System.out.print(head.val + " ,");
-            head = head.next;
-        }
-        System.out.println();
-        System.out.println("------------------");
     }
 
 }

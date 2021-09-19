@@ -1,5 +1,7 @@
 package mdeium;
 
+import utils.PrintUtils;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -9,10 +11,10 @@ public class RemoveDuplicatesFromSortedListII {
         RemoveDuplicatesFromSortedListII removeDuplicatesFromSortedListII = new RemoveDuplicatesFromSortedListII();
         ListNode listNode = removeDuplicatesFromSortedListII.deleteDuplicates(new ListNode(1, new ListNode(2,
                 new ListNode(3, new ListNode(3, new ListNode(4, new ListNode(4, new ListNode(5))))))));
-        removeDuplicatesFromSortedListII.printListNode(listNode);
+        PrintUtils.printListNode(listNode);
         listNode = removeDuplicatesFromSortedListII.deleteDuplicates(new ListNode(1, new ListNode(1,
                 new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(3, new ListNode(3))))))));
-        removeDuplicatesFromSortedListII.printListNode(listNode);
+        PrintUtils.printListNode(listNode);
     }
 
     public ListNode deleteDuplicates(ListNode head) {
@@ -27,15 +29,6 @@ public class RemoveDuplicatesFromSortedListII {
         }
         head.next = deleteDuplicates(head.next);
         return head;
-    }
-
-    private void printListNode(ListNode head) {
-        while (head != null) {
-            System.out.print(head.val + " ,");
-            head = head.next;
-        }
-        System.out.println();
-        System.out.println("------------------");
     }
 
 }
