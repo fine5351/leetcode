@@ -1,5 +1,7 @@
 package mdeium;
 
+import utils.PrintUtils;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -36,8 +38,7 @@ public class Permutations {
             }
         }
         resultList.forEach(result -> {
-            result.forEach(o -> System.out.print(o + " ,"));
-            System.out.println();
+            PrintUtils.printList(result);
         });
         return resultList;
     }

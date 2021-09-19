@@ -43,8 +43,6 @@ public class CombinationSum2 {
             return;
         } else if (target == 0) {
             result.add(new ArrayList<Integer>(output));
-//            output.forEach(o -> System.out.print(o));
-//            System.out.println();
         } else {
             for (int i = index; i < candidates.length; i++) {
                 int nextVal = candidates[i];
