@@ -1,8 +1,7 @@
 package mdeium;
 
+import utils.ListNode;
 import utils.PrintUtils;
-
-import java.util.concurrent.TimeUnit;
 
 public class PartitionList {
 

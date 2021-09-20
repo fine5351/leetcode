@@ -1,9 +1,7 @@
 package mdeium;
 
+import utils.ListNode;
 import utils.PrintUtils;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class RemoveDuplicatesFromSortedListII {
 

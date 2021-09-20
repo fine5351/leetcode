@@ -1,5 +1,7 @@
 package mdeium;
 
+import utils.ListNode;
+
 public class RotateList {
 
     public static void main(String[] args) {

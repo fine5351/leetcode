@@ -1,9 +1,7 @@
 package easy;
 
-import mdeium.ListNode;
+import utils.ListNode;
 import utils.PrintUtils;
-
-import java.net.BindException;
 
 public class ReverseLinkedList {
 
