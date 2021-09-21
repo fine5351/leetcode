@@ -26,22 +26,19 @@ public class LongestSubstringWithoutRepeatingCharacters {
 //        }
 //
 //        int maxLength = 0;
-//        int length = 0;
 //        int startIndex = 0;
 //        int searchIndex = startIndex;
 //        char[] chars = s.toCharArray();
 //        StringBuilder records = new StringBuilder();
-//        while (startIndex < s.length() && searchIndex < s.length()) {
+//        while (startIndex < chars.length && searchIndex < chars.length) {
 //            char val = chars[searchIndex];
 //            if (records.indexOf(String.valueOf(val)) < 0) {
 //                records.append(val);
-//                length++;
-//                if (length > maxLength) {
-//                    maxLength = length;
+//                if (records.length() > maxLength) {
+//                    maxLength = records.length();
 //                }
 //                searchIndex++;
 //            } else {
-//                length = 0;
 //                startIndex++;
 //                searchIndex = startIndex;
 //                records.delete(0, records.length());
