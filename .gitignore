@@ -5,5 +5,8 @@
 /dataSources/*
 # Editor-based HTTP Client requests
 /httpRequests/*
-/target/classes/*/*.class
+/target/classes/easy/*.class
+/target/classes/medium/*.class
+/target/classes/fun/*.class
+/target/classes/learn/tree/*.class
 /leetcode.iml
