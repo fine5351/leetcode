@@ -9,4 +9,5 @@
 /target/classes/medium/*.class
 /target/classes/fun/*.class
 /target/classes/learn/tree/*.class
+/target/classes/utils/*.class
 /leetcode.iml
