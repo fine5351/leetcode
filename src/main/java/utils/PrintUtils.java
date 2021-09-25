@@ -83,4 +83,18 @@ public class PrintUtils {
         }
     }
 
+    public static void printNode(Node root) {
+        List<Integer> resultList = new ArrayList();
+        travelPreorder(root, resultList);
+        printList(resultList);
+    }
+
+    private static void travelPreorder(Node root, List<Integer> resultList) {
+        if (root != null) {
+            resultList.add(root.val);
+            travelPreorder(root.left, resultList);
+            travelPreorder(root.right, resultList);
+        }
+    }
+
 }

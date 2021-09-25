@@ -1,36 +1,38 @@
 package utils;
 
-public class TreeNode {
+public class Node {
 
     public int val;
 
-    public TreeNode left;
+    public Node left;
 
-    public TreeNode right;
+    public Node right;
 
-    public TreeNode() {
+    public Node next;
+
+    public Node() {
     }
 
-    public TreeNode(int val) {
+    public Node(int val) {
         this.val = val;
     }
 
-    public TreeNode(int val, TreeNode left, TreeNode right) {
+    public Node(int val, Node left, Node right) {
         this.val = val;
         this.left = left;
         this.right = right;
     }
 
-    public static TreeNode buildTree(Integer[] nums) {
+    public static Node buildTree(Integer[] nums) {
         return build(nums, 0, nums.length - 1);
     }
 
-    private static TreeNode build(Integer[] nums, int left, int right) {
+    private static Node build(Integer[] nums, int left, int right) {
         if (left > right) {
             return null;
         }
         int mid = left + (right - left) / 2;
-        TreeNode now = new TreeNode(nums[mid]);
+        Node now = new Node(nums[mid]);
         now.left = build(nums, left, mid - 1);
         now.right = build(nums, mid + 1, right);
         return now;
