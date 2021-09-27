@@ -9,7 +9,6 @@ public class PathSum {
         Integer[] array = new Integer[]{5, 4, 8, 11, null, 13, 4, 7, 2, null, null, null, 1};
     }
 
-
     public boolean hasPathSum(TreeNode root, int targetSum) {
         return backTrack(root, 0, targetSum);
     }
