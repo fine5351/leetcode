@@ -10,6 +10,8 @@ public class Node {
 
     public Node next;
 
+    public Node random;
+
     public Node() {
     }
 
