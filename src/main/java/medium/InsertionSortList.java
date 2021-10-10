@@ -30,9 +30,9 @@ public class InsertionSortList {
                 while (newHead.next != null && newHead.next.val < head.val) {
                     newHead = newHead.next;
                 }
-                ListNode temp = newHead.next;
+                ListNode next = newHead.next;
                 newHead.next = new ListNode(head.val);
-                newHead.next.next = temp;
+                newHead.next.next = next;
             }
             newHead = dummy.next;
             head = head.next;
