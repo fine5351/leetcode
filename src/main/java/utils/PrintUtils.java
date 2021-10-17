@@ -1,11 +1,16 @@
 package utils;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class PrintUtils {
+
+    private  static final Logger logger = LoggerFactory.getLogger(PrintUtils.class);
 
     public static void print2DArray(int[][] array) {
         for (int i = 0; i < array.length; i++) {
