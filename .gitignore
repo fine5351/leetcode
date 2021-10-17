@@ -11,3 +11,4 @@
 /target/classes/learn/tree/*.class
 /target/classes/utils/*.class
 /leetcode.iml
+/target/classes/hard/*.class

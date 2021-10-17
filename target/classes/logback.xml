@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 配置檔案修改時重新載入，預設true -->
+<configuration scan="true">
+
+    <!--定義日誌檔案的儲存地址 勿在 LogBack 的配置中使用相對路徑-->
+    <property name="CATALINA_BASE" value="**/logs"></property>
+
+    <!-- 控制檯輸出 -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder charset="UTF-8">
+            <!-- 輸出日誌記錄格式 -->
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level%logger{36}[%line] : %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- 第一個檔案輸出,每天產生一個檔案 -->
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- 輸出檔案路徑+檔名 -->
+            <fileNamePattern>${CATALINA_BASE}/aa.%d{yyyyMMdd}.log</fileNamePattern>
+            <!-- 儲存30天的日誌 -->
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+        <encoder charset="UTF-8">
+            <!-- 輸出日誌記錄格式 -->
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36}[%line] : %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- 設定日誌輸出級別 -->
+    <root level="INFO">
+        <appender-ref ref="CONSOLE" />
+    </root>
+</configuration>
