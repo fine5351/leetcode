@@ -34,7 +34,14 @@ public class PrintUtils {
     }
 
     public static void printList(List<?> list) {
-        list.forEach(o -> System.out.print(o + " ,"));
+        list.forEach(o -> {
+            System.out.print(o + " ,");
+//            try {
+//                TimeUnit.MILLISECONDS.sleep(250);
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            }
+        });
         System.out.println();
         System.out.println("-----------------------");
     }
