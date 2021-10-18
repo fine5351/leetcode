@@ -17,19 +17,23 @@ public class LongestPalindrome {
     }
 
     public int longestPalindrome(String s) {
-        Map<Character, Integer> map = new HashMap<>();
         char[] chars = s.toCharArray();
+        int[] indexs = new int[52];
         for (int i = 0; i < chars.length; i++) {
-            int appearCount = map.getOrDefault(chars[i], 0) + 1;
-            map.put(chars[i], appearCount);
+            int index = chars[i] - 97;
+            if (index >= 0) {
+                indexs[index]++;
+            } else {
+                indexs[index + 32 + 26]++;
+            }
         }
         int length = 0;
         int oddCount = 0;
-        for (Map.Entry<Character, Integer> entry : map.entrySet()) {
-            if (entry.getValue() % 2 != 0) {
+        for (int i = 0; i < indexs.length; i++) {
+            if (indexs[i] % 2 != 0) {
                 oddCount++;
             }
-            length += entry.getValue();
+            length += indexs[i];
         }
         return length - (oddCount > 0 ? oddCount - 1 : 0);
     }
