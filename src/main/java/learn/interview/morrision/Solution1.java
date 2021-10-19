@@ -1,13 +1,11 @@
-package easy;
+package learn.interview.morrision;
 
-import java.util.Locale;
-
-public class ValidPalindrome {
+public class Solution1 {
 
     public static void main(String[] args) {
-        ValidPalindrome validPalindrome = new ValidPalindrome();
-        System.out.println(validPalindrome.isPalindrome("A man, a plan, a canal: Panama"));
-        System.out.println(validPalindrome.isPalindrome("race a car"));
+        Solution1 solution1 = new Solution1();
+        System.out.println(solution1.isPalindrome("A man, a plan, a canal: Panama"));
+        System.out.println(solution1.isPalindrome("race a car"));
     }
 
     public boolean isPalindrome(String s) {
@@ -17,7 +15,7 @@ public class ValidPalindrome {
         while (left < right) {
             if (isAlphanumeric(chars[left]) && isAlphanumeric(chars[right])) {
                 if (chars[left] != chars[right]) {
-                        return false;
+                    return false;
                 }
                 else{
                     right--;
