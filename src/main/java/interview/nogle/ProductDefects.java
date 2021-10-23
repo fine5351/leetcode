@@ -1,6 +1,4 @@
-package learn.interview.nogle;
-
-import jdk.internal.icu.util.CodePointTrie;
+package interview.nogle;
 
 import java.util.List;
 

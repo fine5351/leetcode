@@ -1,4 +1,4 @@
-package learn.interview.morrision;
+package interview.morrison;
 
 public class Solution1 {
 

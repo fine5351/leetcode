@@ -1,4 +1,4 @@
-package learn.interview.nogle;
+package interview.nogle;
 
 import java.util.HashMap;
 import java.util.List;

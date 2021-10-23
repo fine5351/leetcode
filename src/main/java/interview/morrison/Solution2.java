@@ -1,6 +1,4 @@
-package learn.interview.morrision;
-
-import easy.DeleteColumnsToMakeSorted;
+package interview.morrison;
 
 public class Solution2 {
 
