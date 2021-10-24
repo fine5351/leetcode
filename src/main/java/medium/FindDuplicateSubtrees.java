@@ -24,8 +24,8 @@ public class FindDuplicateSubtrees {
         if (root == null) {
             return "#";
         }
-        String leftPath = travel(root.left, path + root.val);
-        String rightPath = travel(root.right, path + root.val);
+        String leftPath = travel(root.left, path);
+        String rightPath = travel(root.right, path);
         String subTree = leftPath + "," + rightPath + "," + root.val;
         int appearCount = subTreeMap.getOrDefault(subTree, 0) + 1;
         if (appearCount == 2) {
