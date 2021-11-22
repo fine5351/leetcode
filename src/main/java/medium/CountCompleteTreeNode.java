@@ -14,9 +14,12 @@ public class CountCompleteTreeNode {
 
     private int travel(TreeNode root, int count){
         if (root != null) {
-            return countNodes(root.left) + countNodes(root.right) + 1;
-        }
-        else{
+            if (root.right != null) {
+                return countNodes(root.left) + countNodes(root.right) + 1;
+            } else {
+                return countNodes(root.left) + 1;
+            }
+        } else {
             return 0;
         }
     }
