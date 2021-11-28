@@ -19,9 +19,6 @@ public class UglyNumber {
     }
 
     public boolean isUgly(int n) {
-        if(n == 1){
-            return true;
-        }
         while (n % 2 == 0) {
             n = n / 2;
         }
