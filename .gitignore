@@ -7,3 +7,6 @@
 /httpRequests/*
 /target/classes/**/*
 /leetcode.iml
+
+# maven target
+target/

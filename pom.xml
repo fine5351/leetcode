@@ -9,8 +9,10 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <maven.compiler.source>19</maven.compiler.source>
-        <maven.compiler.target>19</maven.compiler.target>
+        <java.version>17</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
         <slf4j-api.version>2.0.5</slf4j-api.version>
         <logback-core.version>1.4.5</logback-core.version>
         <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
