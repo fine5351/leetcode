@@ -31,7 +31,7 @@ public class MinStack {
 
     public void pop() {
         int pop = stack.pop();
-        if(minStack.peek() == pop){
+        if (minStack.peek() == pop) {
             minStack.pop();
         }
     }

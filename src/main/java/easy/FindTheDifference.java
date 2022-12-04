@@ -17,10 +17,10 @@ public class FindTheDifference {
         char result = chart[0];
 
         for (int i = 0; i < chars.length; i++) {
-            result = (char)(result ^ chars[i]) ;
+            result = (char) (result ^ chars[i]);
         }
         for (int i = 1; i < chart.length; i++) {
-            result = (char)(result ^ chart[i]);
+            result = (char) (result ^ chart[i]);
         }
 
         return result;

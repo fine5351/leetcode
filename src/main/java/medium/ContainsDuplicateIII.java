@@ -15,7 +15,7 @@ public class ContainsDuplicateIII {
             if (set.ceiling(nums[i]) != null && set.ceiling(nums[i]) <= nums[i] + t) {
                 return true;
             }
-            if (set.floor(nums[i]) != null && nums[i] <= set.floor(nums[i])+ t) {
+            if (set.floor(nums[i]) != null && nums[i] <= set.floor(nums[i]) + t) {
                 return true;
             }
             set.add(nums[i]);

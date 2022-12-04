@@ -23,11 +23,10 @@ public class RomanToInteger {
             int val1 = getValue(s.charAt(i));
             if (i < s.length() - 1) {
                 int val2 = getValue(s.charAt(i + 1));
-                if(val1 < val2){
+                if (val1 < val2) {
                     result += val2 - val1;
                     i++;
-                }
-                else{
+                } else {
                     result += val1;
                 }
             } else {

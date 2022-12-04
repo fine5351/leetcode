@@ -35,7 +35,7 @@ public class BasicCalculatorII {
                 } else if ('/' == operator) {
                     curResult /= now;
                 }
-                if ('+' == c || '-' == c|| i == s.length() - 1) {
+                if ('+' == c || '-' == c || i == s.length() - 1) {
                     result += curResult;
                     curResult = 0;
                 }

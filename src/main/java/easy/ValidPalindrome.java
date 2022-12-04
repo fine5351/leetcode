@@ -15,9 +15,8 @@ public class ValidPalindrome {
         while (left < right) {
             if (isAlphanumeric(chars[left]) && isAlphanumeric(chars[right])) {
                 if (chars[left] != chars[right]) {
-                        return false;
-                }
-                else{
+                    return false;
+                } else {
                     right--;
                     left++;
                 }

@@ -29,7 +29,7 @@ public class PermutationsII {
             return;
         } else {
             for (int i = 0; i < nums.length; i++) {
-                if (i > 0 && nums[i] == nums[i - 1] && used[i - 1]){
+                if (i > 0 && nums[i] == nums[i - 1] && used[i - 1]) {
                     continue;
                 }
                 if (!used[i]) {

@@ -45,7 +45,7 @@ public class WordPattern {
             }
             sIndexList.add(i);
 
-            if(!patternIndexList.equals(sIndexList)){
+            if (!patternIndexList.equals(sIndexList)) {
                 return false;
             }
         }
