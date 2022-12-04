@@ -1,7 +1,5 @@
 package medium;
 
-import java.util.Arrays;
-
 public class BitwiseANDOfNumbersRange {
 
     public static void main(String[] args) {

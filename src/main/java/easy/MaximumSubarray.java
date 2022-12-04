@@ -1,9 +1,5 @@
 package easy;
 
-import utils.PrintUtils;
-
-import java.util.Arrays;
-
 public class MaximumSubarray {
 
     public static void main(String[] args) {

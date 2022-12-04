@@ -1,12 +1,13 @@
 package medium;
 
-import easy.AddDigits;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import utils.PrintUtils;
 
-import javax.swing.text.AbstractDocument;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 public class RepeatedDNASequence {
 

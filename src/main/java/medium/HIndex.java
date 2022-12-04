@@ -1,7 +1,6 @@
 package medium;
 
-import java.util.*;
-import java.util.zip.CheckedOutputStream;
+import java.util.Arrays;
 
 public class HIndex {
 

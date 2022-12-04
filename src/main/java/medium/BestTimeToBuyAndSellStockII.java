@@ -1,10 +1,5 @@
 package medium;
 
-import utils.PrintUtils;
-
-import java.util.Arrays;
-import java.util.concurrent.ForkJoinPool;
-
 public class BestTimeToBuyAndSellStockII {
 
     public static void main(String[] args) {

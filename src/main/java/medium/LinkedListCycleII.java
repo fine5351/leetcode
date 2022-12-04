@@ -2,8 +2,6 @@ package medium;
 
 import utils.ListNode;
 
-import java.util.List;
-
 public class LinkedListCycleII {
 
     public static void main(String[] args) {

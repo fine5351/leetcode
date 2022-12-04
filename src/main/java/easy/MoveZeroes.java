@@ -1,7 +1,5 @@
 package easy;
 
-import java.util.Arrays;
-
 public class MoveZeroes {
 
     public static void main(String[] args) {

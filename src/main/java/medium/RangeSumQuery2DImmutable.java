@@ -1,7 +1,5 @@
 package medium;
 
-import utils.PrintUtils;
-
 public class RangeSumQuery2DImmutable {
 
     public static void main(String[] args) {

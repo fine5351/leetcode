@@ -1,6 +1,5 @@
 package medium;
 
-import java.math.BigDecimal;
 import java.util.Arrays;
 
 public class ProductOfArrayExceptSelf {

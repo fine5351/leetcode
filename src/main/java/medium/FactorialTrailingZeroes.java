@@ -1,7 +1,5 @@
 package medium;
 
-import java.math.BigDecimal;
-
 public class FactorialTrailingZeroes {
 
     public static void main(String[] args) {

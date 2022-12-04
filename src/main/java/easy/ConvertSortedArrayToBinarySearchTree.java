@@ -1,6 +1,5 @@
 package easy;
 
-import utils.Node;
 import utils.TreeNode;
 
 public class ConvertSortedArrayToBinarySearchTree {

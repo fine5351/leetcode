@@ -1,7 +1,5 @@
 package medium;
 
-import utils.PrintUtils;
-
 public class NumbersOfIslands {
 
     public static void main(String[] args) {

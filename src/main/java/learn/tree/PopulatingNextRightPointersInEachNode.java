@@ -3,9 +3,6 @@ package learn.tree;
 import utils.Node;
 import utils.PrintUtils;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class PopulatingNextRightPointersInEachNode {
 
     public static void main(String[] args) {

@@ -1,6 +1,5 @@
 package medium;
 
-import hard.MergeKSortedLists;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

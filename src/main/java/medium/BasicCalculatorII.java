@@ -3,8 +3,6 @@ package medium;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.Stack;
-
 public class BasicCalculatorII {
 
     private static final Logger logger = LoggerFactory.getLogger(BasicCalculatorII.class);

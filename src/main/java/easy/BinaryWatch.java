@@ -2,8 +2,8 @@ package easy;
 
 import utils.PrintUtils;
 
-import java.util.*;
-import java.util.stream.Collectors;
+import java.util.ArrayList;
+import java.util.List;
 
 public class BinaryWatch {
 

@@ -1,9 +1,5 @@
 package easy;
 
-import java.util.HashMap;
-import java.util.Locale;
-import java.util.Map;
-
 public class RansomNote {
 
     public static void main(String[] args) {

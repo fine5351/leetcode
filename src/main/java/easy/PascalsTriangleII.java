@@ -1,7 +1,5 @@
 package easy;
 
-import utils.PrintUtils;
-
 import java.util.ArrayList;
 import java.util.List;
 

@@ -1,8 +1,5 @@
 package easy;
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class RomanToInteger {
 
     public static void main(String[] args) {

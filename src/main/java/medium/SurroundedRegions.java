@@ -2,9 +2,6 @@ package medium;
 
 import utils.PrintUtils;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class SurroundedRegions {
 
     public static void main(String[] args) {

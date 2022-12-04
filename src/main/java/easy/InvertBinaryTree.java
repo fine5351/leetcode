@@ -2,10 +2,6 @@ package easy;
 
 import utils.TreeNode;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-
 public class InvertBinaryTree {
 
     public static void main(String[] args) {

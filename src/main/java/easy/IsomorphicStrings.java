@@ -1,7 +1,5 @@
 package easy;
 
-import java.util.*;
-
 public class IsomorphicStrings {
 
     public static void main(String[] args) {

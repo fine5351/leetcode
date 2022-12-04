@@ -1,7 +1,5 @@
 package easy;
 
-import javax.swing.event.HyperlinkEvent;
-
 public class ImplemenmtStrStr {
 
     public static void main(String[] args) {

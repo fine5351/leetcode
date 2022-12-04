@@ -1,9 +1,5 @@
 package medium;
 
-import utils.PrintUtils;
-
-import java.util.Arrays;
-
 public class SingleNumberII {
 
     public static void main(String[] args) {

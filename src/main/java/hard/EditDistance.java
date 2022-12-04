@@ -2,9 +2,6 @@ package hard;
 
 import utils.PrintUtils;
 
-import java.awt.event.MouseMotionAdapter;
-import java.util.Arrays;
-
 public class EditDistance {
 
     public static void main(String[] args) {

@@ -5,8 +5,6 @@ import org.slf4j.LoggerFactory;
 import utils.PrintUtils;
 import utils.TreeNode;
 
-import java.util.concurrent.TimeUnit;
-
 public class MaximumBinaryTree {
 
     private static final Logger logger = LoggerFactory.getLogger(MaximumBinaryTree.class);
